@@ -10,7 +10,14 @@ namespace FizzBuzzCodeKata
 
             foreach (var number in numbers)
             {
-                if(number % 3 == 0)
+                if (number % 15 == 0)
+                {
+                    result.Add("FizzBuzz");
+
+                    continue;
+                }
+
+                if (number % 3 == 0)
                 {
                     result.Add("Fizz");
 
