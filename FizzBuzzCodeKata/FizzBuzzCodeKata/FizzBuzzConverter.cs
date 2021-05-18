@@ -1,10 +1,19 @@
-﻿namespace FizzBuzzCodeKata
+﻿using System.Collections.Generic;
+
+namespace FizzBuzzCodeKata
 {
     public class FizzBuzzConverter
     {
         public string[] Convert(int[] numbers)
         {
-            return new string[] { };
+            var result = new List<string>();
+
+            foreach (var number in numbers)
+            {
+                result.Add(number.ToString());
+            }
+
+            return result.ToArray();
         }
     }
 }
