@@ -10,6 +10,13 @@ namespace FizzBuzzCodeKata
 
             foreach (var number in numbers)
             {
+                if(number % 3 == 0)
+                {
+                    result.Add("Fizz");
+
+                    continue;
+                }
+
                 result.Add(number.ToString());
             }
 
