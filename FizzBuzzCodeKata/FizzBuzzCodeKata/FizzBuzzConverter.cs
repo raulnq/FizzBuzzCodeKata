@@ -17,6 +17,13 @@ namespace FizzBuzzCodeKata
                     continue;
                 }
 
+                if (number % 5 == 0)
+                {
+                    result.Add("Buzz");
+
+                    continue;
+                }
+
                 result.Add(number.ToString());
             }
 
